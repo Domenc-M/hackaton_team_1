@@ -1,26 +1,14 @@
 {
-  "name": "hackaton",
+  "name": "scss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w assets/scss:assets/css"
+    "sass": "sass -w src/assets/scss:src/assets/css"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "compress-images": "^2.0.4",
-    "cssnano": "^5.0.15",
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "postcss": "^8.4.5",
-    "sass": "^1.48.0"
-  },
   "dependencies": {
-    "pngquant-bin": "^6.0.1"
+    "sass": "^1.43.4"
   }
 }
