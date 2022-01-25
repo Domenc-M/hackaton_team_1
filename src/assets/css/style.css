@@ -2,4 +2,9 @@ h1 {
   color: blue;
 }
 
+article {
+  height:100vh;
+  background-color:blue;
+}
+
 /*# sourceMappingURL=style.css.map */
