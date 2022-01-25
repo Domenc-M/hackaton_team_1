@@ -40,4 +40,9 @@ body .carousel button {
   bottom: 0;
 }
 
+article {
+  height:100vh;
+  background-color:blue;
+}
+
 /*# sourceMappingURL=style.css.map */
