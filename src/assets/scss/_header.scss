@@ -1,0 +1,41 @@
+header{
+  height: 100vh;
+  .headerContainer{
+    height: 100%;
+    h1{
+      position: absolute;
+      z-index: 15;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $white;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold !important;
+      font-size: 101px;
+    }
+    div{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .sky{
+      background: url(../img/ciel-nuageux.png) center/cover;
+    }
+    .hangar{
+      background: url(../img/hangar.png) center/cover;
+      bottom: 0px;
+      left: 0px;
+    }
+    .fog{
+      background: url(../img/brouillard.png) top/cover;
+      height: 75%;
+      bottom: 0;
+    }
+    .streetLamp{
+      background: url(../img/lampadaire.png) top/cover;
+      z-index: 5;
+    }
+  }
+}
