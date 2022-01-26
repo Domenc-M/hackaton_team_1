@@ -1,48 +1,95 @@
-body .carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 550px;
-}
-body .carousel #carouselContainer {
-  height: 550px;
-  display: flex;
-  position: relative;
-}
-body .carousel #carouselContainer div {
-  position: absolute;
-  transform: translateX(-50%);
-  width: 500px;
-  height: 500px;
-}
-body .carousel #carouselContainer div img {
-  width: 500px;
-  height: 500px;
-}
-body .carousel #carouselContainer .current {
-  opacity: 1;
-}
-body .carousel #carouselContainer .previousSlide {
-  left: -700px;
-}
-body .carousel #carouselContainer .nextSlide {
-  left: 700px;
-}
-body .carousel #carouselContainer .dispawnLeft {
-  left: -1500px;
-}
-body .carousel #carouselContainer .dispawnRight {
-  left: 1500px;
-}
-body .carousel button {
-  margin: 15px;
-  bottom: 0;
+li {
+  list-style: none;
 }
 
-article {
-  height:100vh;
-  background-color:blue;
+nav {
+  opacity: 0;
+}
+
+.burgerMenue {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.burgerMenue div {
+  background: #000;
+  height: 5px;
+  width: 35px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.navburger {
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  text-align: right;
+  opacity: 1;
+  transition: 1s;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  opacity: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: #19e4f9;
+}
+nav .burgerMenue {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+nav .burgerMenue div {
+  background: #000;
+  height: 5px;
+  width: 35px;
+  margin: 5px;
+  border-radius: 5px;
+}
+nav .logo {
+  width: 70px;
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+}
+nav .logo img {
+  width: 50px;
+}
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  color: #4c4c4c;
+}
+nav ul li a:hover {
+  color: black;
+}
+nav .navburger {
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  text-align: right;
+  opacity: 1;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,44 +1,31 @@
-body {
-    .carousel{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 550px;
-        #carouselContainer{
-            height: 550px;
-            display: flex;
-            position: relative;
-            div{
-                position: absolute;
-                transform: translateX(-50%);
-                width: 500px;
-                height: 500px;
-                img{
-                    width: 500px;
-                    height: 500px;
-                }
-            }
-            .current{
-                opacity:1;
-            }
-            .previousSlide{
-                left: -700px;
-            }
-            .nextSlide{
-                left: 700px;
-            }
-            .dispawnLeft{
-                left: -1500px;
-            }
-            .dispawnRight{
-                left: 1500px;
-            }
-        }
-        
-        button{
-            margin: 15px;
-            bottom: 0;
+
+    li{
+        list-style: none;
+    }
+    nav{
+
+        opacity: 0;
+    }
+
+    .burgerMenue{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        div{
+            background: #000;
+            height: 5px;
+            width: 35px;
+            margin: 5px;
+            border-radius: 5px;
         }
     }
-}
+    .navburger{
+        position: absolute;
+        right: 15px;
+        top: 60px;
+        text-align: right;
+        opacity: 1;
+        transition: 1s;
+        flex-direction: column;
+        align-items: flex-end;
+    }
