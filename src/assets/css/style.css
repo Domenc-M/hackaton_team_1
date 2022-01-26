@@ -1,10 +1,33 @@
-h1 {
-  color: blue;
+body {
+  text-decoration: none;
 }
 
-article {
-  height:100vh;
-  background-color:blue;
+.resume {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 5rem;
+}
+.resume h2 {
+  size: 69px;
+  padding: 0 5rem;
+}
+.resume p {
+  size: 35px;
+  margin: 3rem 10rem;
+}
+.resume a {
+  text-decoration: none;
+  color: white;
+  background-color: #19e4f9;
+  border: 2px solid #19e4f9;
+  border-radius: 25px;
+  padding: 4px 50px;
+}
+.resume a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
