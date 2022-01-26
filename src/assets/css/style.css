@@ -1,10 +1,23 @@
-h1 {
-  color: blue;
+#section4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: whitesmoke;
 }
-
-article {
-  height:100vh;
-  background-color:blue;
+#section4 > div {
+  display: grid;
+  grid-template-rows: 60% 1fr;
+  flex: 1 0 20%;
+  min-width: 150px;
+  max-width: 450px;
+  margin: 10px;
+  background-color: #40c0e0;
+  border-radius: 8px;
+  padding: 20px 20px 20px;
+  box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+}
+#section4 > div #img1 {
+  background: url(../img/illustration_groupe.jpg) center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */
