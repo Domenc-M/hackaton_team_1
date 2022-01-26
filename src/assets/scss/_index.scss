@@ -1,31 +1,113 @@
 body{
     text-decoration: none;
 }
+
+h2 {
+    font-size: 69px;
+    font-family:"Stardos";
+}
+// POUR le RESUME---------------------------------------------------------------------------------------------------
 .resume{
     color: white;
+    size: 100%;
     background-color: black;
     text-align: center;
     padding: 5rem;
     
     h2{
         size: 69px;
-        padding: 0 5rem;
+        padding: 0 1rem;
     }
     p{
-        size: 35px;
-        margin: 3rem 10rem;
+        margin: 3rem 1rem;
+        font-size: 20px;
     }
-    a{
+    a{  
+        font-size:20px;
+        font-family:"Lato";
         text-decoration: none;
-        color: white;
-        background-color: #19e4f9;
-        border: 2px solid #19e4f9 ;
+        color: rgb(0, 0, 0);
+        background-color: $cyan;
+        border: 2px solid $cyan ;
         border-radius: 25px;
         padding: 4px 50px;
     }
     a:hover{
         text-decoration: none;
+        color: $cyan;
+        background-color: black;
+        box-shadow: 0px 0px 40px $cyan;
+    }
+}
+
+// pour les PRIX ------------------------------------------------------------------------------------------
+.prix-container{
+    background-color: red;
+    background-clip: border-box;
+    .prix{     
         color: white;
         background-color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            size: 69px;
+            margin: 0 0 2rem 0;
+        }
+        
+        .gligne{
+            width: 17rem;
+            height: 5px;
+            border-top: 3px solid white;
+            
+        }
+        .sectionPrix{
+            
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 3rem;
+            display: flex;
+            justify-content: center;
+
+            .pligne{
+                width: 100px;
+                height: 5px;
+                border-top: 3px solid white;
+            }
+            
+            h3{
+                font-size: 64px;
+                font-family:"Franklin";
+                margin: 2rem;
+            }
+            
+            p{
+                font-size: 20px;
+            }
+
+            span{
+                color: $cyan; 
+            }
+
+            a{
+                margin: 2rem;
+                font-size:20px;
+                font-family:"Lato";
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                background-color: $cyan;
+                border: 2px solid $cyan ;
+                border-radius: 25px;
+                padding: 4px 50px;
+            }
+            a:hover{
+                text-decoration: none;
+                color: $cyan;
+                background-color: black;
+                box-shadow: 0px 0px 40px $cyan;
+            }
+        }
     }
 }

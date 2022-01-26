@@ -1,0 +1,54 @@
+@font-face {
+    font-family:"Stardos";
+    src:url(../fonts/StardosStencil-Bold.ttf);
+}
+
+@font-face {
+    font-family:"Lato";
+    src:url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Franklin";
+    src:url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+}
+
+h1 {
+    font-size: 121px;
+    font-family:"Stardos";
+}
+
+h2 {
+    font-size: 69px;
+    font-family:"Stardos";
+}
+
+h3 {
+    font-size: 64px;
+    font-family:"Franklin";
+}
+
+.mobile-subtitle {
+    font-size: 36px;
+}
+
+p  {
+    font-size:20px;
+    font-family:"Lato";
+}
+
+@media (max-width: 767.98px) { 
+h1 {
+    font-size:48px;
+}
+
+h2 {
+    font-size:24px;
+}
+
+p {
+    font-size:13px;
+}
+
+
+}

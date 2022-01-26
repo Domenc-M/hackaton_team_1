@@ -1,32 +1,85 @@
+@font-face {
+  font-family: "Stardos";
+  src: url(../fonts/StardosStencil-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Franklin";
+  src: url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+}
 h1 {
-  color: red;
+  font-size: 121px;
+  font-family: "Stardos";
 }
 
-article {
-  height:100vh;
-  background-color:blue;
+h2 {
+  font-size: 69px;
+  font-family: "Stardos";
+}
+
+h3 {
+  font-size: 64px;
+  font-family: "Franklin";
+}
+
+.mobile-subtitle {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Lato";
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+.carousel_room_container {
+  display: flex;
+}
 
 body {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 69px;
+  font-family: "Stardos";
+}
+
 .resume {
   color: white;
+  size: 100%;
   background-color: black;
   text-align: center;
   padding: 5rem;
 }
 .resume h2 {
   size: 69px;
-  padding: 0 5rem;
+  padding: 0 1rem;
 }
 .resume p {
-  size: 35px;
-  margin: 3rem 10rem;
+  margin: 3rem 1rem;
+  font-size: 20px;
 }
 .resume a {
+  font-size: 20px;
+  font-family: "Lato";
   text-decoration: none;
-  color: white;
+  color: black;
   background-color: #19e4f9;
   border: 2px solid #19e4f9;
   border-radius: 25px;
@@ -34,8 +87,71 @@ body {
 }
 .resume a:hover {
   text-decoration: none;
+  color: #19e4f9;
+  background-color: black;
+  box-shadow: 0px 0px 40px #19e4f9;
+}
+
+.prix-container {
+  background-color: red;
+  background-clip: border-box;
+}
+.prix-container .prix {
   color: white;
   background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prix-container .prix h2 {
+  size: 69px;
+  margin: 0 0 2rem 0;
+}
+.prix-container .prix .gligne {
+  width: 17rem;
+  height: 5px;
+  border-top: 3px solid white;
+}
+.prix-container .prix .sectionPrix {
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+.prix-container .prix .sectionPrix .pligne {
+  width: 100px;
+  height: 5px;
+  border-top: 3px solid white;
+}
+.prix-container .prix .sectionPrix h3 {
+  font-size: 64px;
+  font-family: "Franklin";
+  margin: 2rem;
+}
+.prix-container .prix .sectionPrix p {
+  font-size: 20px;
+}
+.prix-container .prix .sectionPrix span {
+  color: #19e4f9;
+}
+.prix-container .prix .sectionPrix a {
+  margin: 2rem;
+  font-size: 20px;
+  font-family: "Lato";
+  text-decoration: none;
+  color: black;
+  background-color: #19e4f9;
+  border: 2px solid #19e4f9;
+  border-radius: 25px;
+  padding: 4px 50px;
+}
+.prix-container .prix .sectionPrix a:hover {
+  text-decoration: none;
+  color: #19e4f9;
+  background-color: black;
+  box-shadow: 0px 0px 40px #19e4f9;
 }
 
 /*# sourceMappingURL=style.css.map */
