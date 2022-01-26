@@ -1,10 +1,101 @@
+@font-face {
+  font-family: "Stardos";
+  src: url(../fonts/StardosStencil-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Franklin";
+  src: url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+}
 h1 {
-  color: red;
+  font-size: 121px;
+  font-family: "Stardos";
 }
 
-article {
-  height:100vh;
-  background-color:blue;
+h2 {
+  font-size: 69px;
+  font-family: "Stardos";
+}
+
+h3 {
+  font-size: 64px;
+  font-family: "Franklin";
+}
+
+.mobile-subtitle {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Lato";
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+.carousel_room_container {
+  display: flex;
+}
+.carousel_room_container .img-container {
+  padding-left: 10%;
+}
+.carousel_room_container .img-container img {
+  filter: drop-shadow(4px 4px 10px #000000);
+}
+.carousel_room_container .carousel_room_description {
+  padding-top: 5rem;
+  padding-right: 10rem;
+}
+.carousel_room_container .carousel_room_description h3 {
+  color: white;
+}
+.carousel_room_container .carousel_room_description p {
+  color: white;
+}
+
+.carousel_room_title {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-transform: uppercase;
+}
+
+.carousel_button_custom {
+  font-size: 150px;
+  color: #8C2AFF;
+  opacity: 1 !important;
+}
+
+.dot {
+  height: 20px !important;
+  width: 20px !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+#section-carousel-room {
+  background-image: url("../img/logo-08.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,45 @@
 .carousel_room_container {
- display:flex;   
+ display:flex;
+
+    .img-container {
+        padding-left:10%;
+
+        img {
+            filter: drop-shadow(4px 4px 10px #000000);
+        }
+    }
+
+    .carousel_room_description {
+        padding-top:5rem;
+        padding-right:10rem;
+        h3 {
+            color:$white;
+        }
+        p {
+            color:$white;
+        }
+    }
+}
+.carousel_room_title {
+    color: $white;
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    margin-left:15vw;
+    margin-right:15vw;
+    text-transform:uppercase;
+}
+
+.carousel_button_custom {
+    font-size:150px;
+    color:$purple;
+    opacity:1 !important;
+}
+
+.dot {
+    height:20px !important;
+    width:20px !important;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius:100%;
 }
