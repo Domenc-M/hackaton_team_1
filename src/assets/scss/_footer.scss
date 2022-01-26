@@ -1,0 +1,110 @@
+footer {
+
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @media (max-width: 767.98px) {
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 30% 1fr;
+        grid-template-areas: 
+            "logo"
+            "reseau"
+            "nav"
+        ;
+    
+        .logoFooterContainer {
+            grid-area: logo;
+        }
+        .logoReseau {
+            grid-area: reseau;
+        }
+        .navFooterContainer {
+            grid-area: nav;
+        }
+    
+    }
+    @media (max-width: 550px) {
+
+        grid-template-rows: 1fr 20% 1fr;
+
+    }
+ 
+
+    .navFooterContainer {
+
+        display: flex;
+        justify-content: center;
+
+        #navFooter {
+            margin: 0;
+            padding: 0;
+            color: #4c4c4c;
+            font-family: "Lato";
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: left;
+
+            li:hover {
+                cursor: pointer;
+                color: white;
+                
+            }
+            
+            @media (max-width: 767.98px) {
+                text-align: center;
+            }
+        }
+
+    }
+    
+    .logoFooterContainer {
+
+    background: white;
+    border-radius: 150px;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+            
+    
+        #logoFooter {
+            width: 85%;
+        
+        
+        }
+    }
+        
+        
+    #logoReseau {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+            
+        li {
+            width: 15%;
+            margin: 20px;
+
+            &:hover {
+                cursor: pointer;
+                transition: 0.2s;
+            }
+                 
+        }
+
+    }
+}
+footer::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: #19e4f9;
+   
+}
+
