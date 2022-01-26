@@ -1,23 +1,87 @@
+@font-face {
+  font-family: "Stardos";
+  src: url(../fonts/StardosStencil-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Franklin";
+  src: url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+}
+h1 {
+  font-size: 121px;
+  font-family: "Stardos";
+}
+
+h2 {
+  font-size: 69px;
+  font-family: "Stardos";
+}
+
+h3 {
+  font-size: 64px;
+  font-family: "Franklin";
+}
+
+.mobile-subtitle {
+  font-size: 36px;
+}
+
+p {
+  font-size: 25px;
+  font-family: "Lato";
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+.carousel_room_container {
+  display: flex;
+}
+
 #section4 {
+  background: black;
+  padding-top: 50px;
+}
+#section4 #section4Container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: whitesmoke;
+  background: black;
+  width: 80%;
+  margin: 0 auto;
 }
-#section4 > div {
-  display: grid;
-  grid-template-rows: 60% 1fr;
+#section4 #section4Container > div {
+  text-align: center;
   flex: 1 0 20%;
   min-width: 150px;
-  max-width: 450px;
+  max-width: 300px;
   margin: 10px;
-  background-color: #40c0e0;
   border-radius: 8px;
   padding: 20px 20px 20px;
-  box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
 }
-#section4 > div #img1 {
-  background: url(../img/illustration_groupe.jpg) center/cover;
+#section4 #section4Container > div img {
+  width: 80%;
+  border: 5px solid #8C2AFF;
+  box-shadow: 0 1px 40px 40px #8d2aff6e;
+}
+#section4 #section4Container > div p {
+  font-family: "lato";
+  color: white;
+  margin-top: 100px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,27 +1,51 @@
 #section4 {
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background:whitesmoke;
-
-    & > div {
-    display: grid;
-    grid-template-rows: 60% 1fr;
-    flex: 1 0 20%;
-    min-width: 150px;
-    max-width: 450px; 
-    margin: 10px;
-    background-color: rgb(64, 192, 224);
-    border-radius: 8px;
-    padding: 20px 20px 20px;
-    box-shadow: 0 1px 10px rgba(53, 52, 52, 0.411);
+    background: black;
+    padding-top: 50px;
     
-    #img1 {
-        background: url(../img/illustration_groupe.jpg) center/cover;
+
+    #section4Container {
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: black;
+        width: 80%;
+        margin: 0 auto;
+    
+        & > div {
+        // display: grid;
+        // grid-template-rows: 60% 1fr;
+        text-align: center;
+        flex: 1 0 20%;
+        min-width: 150px;
+        max-width: 300px; 
+        margin: 10px;
+        border-radius: 8px;
+        padding: 20px 20px 20px;
         
+        
+        
+        img {
+            width: 80%;
+            border: 5px solid #8C2AFF;
+            box-shadow: 0 1px 40px 40px #8d2aff6e;
+    
+            
+        }
+        
+        p{
+            font-family: "lato";
+            color: white;
+            margin-top: 100px;
+            font-weight: 600;
+        }
+        
+        }
+    
+        
+       
         
     }
-    
 }
-}
+
