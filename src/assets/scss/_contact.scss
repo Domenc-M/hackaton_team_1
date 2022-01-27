@@ -1,0 +1,113 @@
+.contactTop {
+  background: url(../img/logo-08.jpg) center/cover;
+  padding-top: 100px;
+}
+.contactHeader {
+
+  max-width: 25%;
+  padding-top: 50px;
+  margin-left: 50px;
+
+  h3 {
+      font-family: "Stardos";
+      color: white;
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 30px;
+      
+  }
+  p {
+      font-size: 1rem;
+      color: white;
+  }
+}
+.formContainer {
+
+  background: black;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 10px 100px;
+  border-radius: 20px;
+  z-index: 100;
+  position: relative;
+
+  form {
+      display: grid;
+      width: 90%;
+      margin: 0 auto;
+      gap: 10px;
+      
+      & > input {
+          border-radius: 10px;
+          border: none;
+          padding: 10px;
+      }
+      textarea {
+          border-radius: 10px;
+          border: none;
+          padding: 10px;
+      }
+      #valid {
+          width: 40%;
+          border-radius: 50px;
+          background-color: #19e4f9;
+          font-weight: 600;
+          font-size: 1.5rem;
+          margin-top: 20px;
+          border: 2px solid #19e4f9;
+
+          &:hover {
+              background: black;
+              color: #19e4f9;
+          }
+          
+      }
+      
+      
+  }
+}
+.contactFooter {
+  background: #8C2AFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 20px;
+  
+
+
+  h3 {
+      font-size: 3rem;
+      font-family: "stardos";
+      padding-bottom: 40px;
+  }
+  h4 {
+      padding-bottom: 40px;
+  }
+  p {
+      font-size: 0.8rem;
+      line-height: 10px;
+  }
+
+  .googleMap {
+      background: url(../img/googleMap_contact.png) center/cover;
+      max-width: 80%;
+      margin-left: 20px;
+      
+  }
+
+  .adresse {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      
+      
+  }
+  .horaires {
+      text-align: right;
+      max-width: 80%;
+      margin: 0 auto;
+  }
+}

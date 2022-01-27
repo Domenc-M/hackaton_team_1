@@ -58,7 +58,6 @@ nav {
   .logo {
     width: 90px;
     height: 90px;
-    background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +117,8 @@ nav {
 
         .twitch {
           font-size: 1.25rem;
-          color: $purple;
+          background-color: red;
+          color: black;
         }
       }
       @media screen and (max-width: 950px) {
