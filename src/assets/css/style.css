@@ -93,10 +93,17 @@ h2 {
 }
 
 .prix-container {
+  position: relative;
+}
+.prix-container .back-prix {
+  position: absolute;
+  height: 50%;
+  width: 160%;
   background-color: red;
-  background-clip: border-box;
+  z-index: 0;
 }
 .prix-container .prix {
+  z-index: 1;
   color: white;
   background-color: black;
   text-align: center;
