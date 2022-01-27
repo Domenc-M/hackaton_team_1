@@ -78,7 +78,7 @@
   
 
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: "stardos";
         padding-bottom: 40px;
     }
@@ -99,7 +99,9 @@
 
     .adresse {
 
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         
         
     }

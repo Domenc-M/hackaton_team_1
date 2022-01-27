@@ -285,7 +285,7 @@ footer::before {
   gap: 20px;
 }
 .contactFooter h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "stardos";
   padding-bottom: 40px;
 }
@@ -302,7 +302,9 @@ footer::before {
   margin-left: 20px;
 }
 .contactFooter .adresse {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .contactFooter .horaires {
   text-align: right;
