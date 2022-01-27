@@ -14,58 +14,61 @@
 </head>
 
 <body>
-  <!-- For have a burger menue at a low width -->
+  <header>
+      <!-- For have a burger menu at a low width -->
 
-  <div class="burgerMenue" id="menuBurger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <!-- here we got the nav -->
-
-  <nav>
-
-    <div class="logo">
-      <img src="./assets/img/logo-png.png" alt="Logo Hangar Game">
-    </div>
-
-    <!-- this is for the burger menu for close the nav -->
-
-    <div class="navContainer">
-      <div id="close">
-        <div class="closeContainer">
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
+      <div class="burgerMenue" id="menuBurger">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
-      <ul class="nav">
-        <li><a href="#">Nouvelle Room</a></li>
-        <li id="rooms"> Rooms
-          <ul class="under">
-            <li><a href="./chateau-ambulant.html">Le château ambulant</a></li>
-            <li><a href="./sous-terrains-de-bordeaux.html">Les sous terrains de Bordeaux</a></li>
-            <li><a href="./salle3.html">Chucky</a></li>
-            <li><a href="./salle4.html">Squid Game</a></li>
+      <!-- here we got the nav -->
+
+      <nav>
+
+        <div class="logo">
+          <img src="./assets/img/logo_png.png" alt="Logo Hangar Game">
+        </div>
+
+        <!-- this is for the burger menu for close the nav -->
+
+        <div class="navContainer">
+          <div id="close">
+            <div class="closeContainer">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+
+          <ul class="nav">
+            <li><a class="relative" href="./squid-game.html" class="newRoom">Squid Game <div class="new">New</div></a></li>
+            <li id="rooms"> Rooms 
+              <ul class="under">
+                <li><a href="./chateau-ambulant.html">Le château ambulant</a></li>
+                <li><a href="./sousterrains.html">Les sous terrains de Bordeaux</a></li>
+                <li><a href="./chucky.html">Chucky</a></li>
+                <li><a href="./squid-game.html">Squid Game</a></li>
+              </ul>
+            </li>
+
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- thats differents thinks are only with the slide nave bare -->
+
+            <li class="bigHide"><a href="contact.html">Nous trouver :</a></li>
+            <li class="bigHide">
+              <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+            </li>
+            <li class="bigHide">
+              <div class="twitch"><a target="_blank" href="https://www.twitch.tv/hangar_game"><i class="fab fa-twitch"></i></a></div>
+            </li>
           </ul>
-        </li>
-        <li><a href="#">Reservations</a></li>
-        <li><a href="#">Contact</a></li>
 
-        <!-- thats differents thinks are only with the slide nave bare -->
-
-        <li class="bigHide"><a href="#">Nous trouver :</a></li>
-        <li class="bigHide">
-          <div class="facebook"><i class="fab fa-facebook-f"></i></div>
-        </li>
-        <li class="bigHide">
-          <div class="twitch"><i class="fab fa-twitch"></i></div>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
+        </div>
+      </nav>
+  </header>
+    
 
   <main class="rooms">
     <h1>Le chateau ambulant</h1>
