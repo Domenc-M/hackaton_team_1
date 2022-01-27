@@ -366,10 +366,21 @@ footer::before {
   background: black;
   width: 40%;
   margin: 0 auto;
-  padding: 20px 10px 100px;
+  padding: 20px 10px 50px;
   border-radius: 20px;
-  z-index: 100;
+  z-index: 10;
+  transform: translateY(50px);
   position: relative;
+}
+@media screen and (max-width: 850px) {
+  .formContainer {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formContainer {
+    width: 90%;
+  }
 }
 .formContainer form {
   display: grid;
@@ -388,109 +399,6 @@ footer::before {
   padding: 10px;
 }
 .formContainer form #valid {
-  width: 40%;
-  border-radius: 50px;
-  background-color: #19e4f9;
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  border: 2px solid #19e4f9;
-}
-.formContainer form #valid:hover {
-  background: black;
-  color: #19e4f9;
-}
-
-.contactFooter {
-  background: #8C2AFF;
-  transform: translateY(-25px);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  gap: 20px;
-}
-.contactFooter h3 {
-  font-size: 3rem;
-  font-family: "stardos";
-  padding-bottom: 40px;
-}
-.contactFooter h4 {
-  padding-bottom: 40px;
-}
-.contactFooter p {
-  font-size: 0.8rem;
-  line-height: 10px;
-}
-.contactFooter .googleMap {
-  background: url(../img/googleMap_contact.png) center/cover;
-  max-width: 80%;
-  margin-left: 20px;
-}
-.contactFooter .adresse {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.contactFooter .horaires {
-  text-align: right;
-  max-width: 80%;
-  margin: 0 auto;
-}
-.contactFooter .contactHeader {
-  max-width: 25%;
-  padding-top: 50px;
-  margin-left: 50px;
-}
-.contactFooter .contactHeader h3 {
-  font-family: "Stardos";
-  color: white;
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 30px;
-}
-.contactFooter .contactHeader p {
-  font-size: 1rem;
-  color: white;
-}
-.contactFooter .formContainer {
-  background: black;
-  width: 40%;
-  margin: 0 auto;
-  padding: 20px 10px 50px;
-  border-radius: 20px;
-  z-index: 10;
-  transform: translateY(50px);
-  position: relative;
-}
-@media screen and (max-width: 850px) {
-  .contactFooter .formContainer {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .contactFooter .formContainer {
-    width: 90%;
-  }
-}
-.contactFooter .formContainer form {
-  display: grid;
-  width: 90%;
-  margin: 0 auto;
-  gap: 10px;
-}
-.contactFooter .formContainer form > input {
-  border-radius: 10px;
-  border: none;
-  padding: 10px;
-}
-.contactFooter .formContainer form textarea {
-  border-radius: 10px;
-  border: none;
-  padding: 10px;
-}
-.contactFooter .formContainer form #valid {
   width: 150px;
   border-radius: 50px;
   background-color: #19e4f9;
@@ -500,22 +408,23 @@ footer::before {
   border: 2px solid #19e4f9;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .formContainer form #valid {
+  .formContainer form #valid {
     margin: 20px auto 0;
     width: 90%;
   }
 }
-.contactFooter .formContainer form #valid:hover {
+.formContainer form #valid:hover {
   background: black;
   color: #19e4f9;
 }
-.contactFooter .contactFooter {
+
+.contactFooter {
   background: #8c2aff;
   min-height: 75vh;
   display: flex;
   align-items: center;
 }
-.contactFooter .contactFooter .contactFooterContainer {
+.contactFooter .contactFooterContainer {
   width: 90%;
   margin: 0 auto;
   color: white;
@@ -523,58 +432,58 @@ footer::before {
   display: flex;
   justify-content: space-between;
 }
-.contactFooter .contactFooter .contactFooterContainer h3 {
+.contactFooter .contactFooterContainer h3 {
   font-size: 3rem;
   font-family: "stardos";
   padding-bottom: 40px;
 }
-.contactFooter .contactFooter .contactFooterContainer h4 {
+.contactFooter .contactFooterContainer h4 {
   padding-bottom: 40px;
 }
-.contactFooter .contactFooter .contactFooterContainer p {
+.contactFooter .contactFooterContainer p {
   font-size: 0.8rem;
 }
 @media screen and (max-width: 850px) {
-  .contactFooter .contactFooter .contactFooterContainer h3 {
+  .contactFooter .contactFooterContainer h3 {
     font-size: 2rem;
   }
-  .contactFooter .contactFooter .contactFooterContainer h4 {
+  .contactFooter .contactFooterContainer h4 {
     font-size: calc(1rem + 0.3vw);
   }
-  .contactFooter .contactFooter .contactFooterContainer p {
+  .contactFooter .contactFooterContainer p {
     font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer {
+  .contactFooter .contactFooterContainer {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .googleMap {
+.contactFooter .contactFooterContainer .googleMap {
   width: 45%;
   display: flex;
   align-items: center;
 }
-.contactFooter .contactFooter .contactFooterContainer .googleMap iframe {
+.contactFooter .contactFooterContainer .googleMap iframe {
   width: 100%;
   height: 80%;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .googleMap {
+  .contactFooter .contactFooterContainer .googleMap {
     width: 90%;
     height: 450px;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .adresse {
+.contactFooter .contactFooterContainer .adresse {
   margin: 50px 0 0;
   width: 20%;
   padding-left: 15px;
 }
-.contactFooter .contactFooter .contactFooterContainer .adresse h4 {
+.contactFooter .contactFooterContainer .adresse h4 {
   padding: 0;
 }
-.contactFooter .contactFooter .contactFooterContainer .adresse .line {
+.contactFooter .contactFooterContainer .adresse .line {
   max-width: 150px;
   width: 70%;
   height: 2px;
@@ -583,59 +492,59 @@ footer::before {
   margin: 20px 0;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .adresse {
+  .contactFooter .contactFooterContainer .adresse {
     width: 90%;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires {
+.contactFooter .contactFooterContainer .horaires {
   text-align: right;
   width: 35%;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .horaires {
+  .contactFooter .contactFooterContainer .horaires {
     width: 90%;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer {
+.contactFooter .contactFooterContainer .horaires .localizationContainer {
   display: flex;
   justify-content: end;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer {
+  .contactFooter .contactFooterContainer .horaires .localizationContainer {
     justify-content: space-between;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo {
+.contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo {
   width: 50%;
   height: 100%;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo {
+  .contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo {
     width: 90%;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo img {
+.contactFooter .contactFooterContainer .horaires .localizationContainer .localizationLogo img {
   width: 100%;
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .day {
+.contactFooter .contactFooterContainer .horaires .localizationContainer .day {
   display: flex;
   flex-direction: column;
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .day div {
+.contactFooter .contactFooterContainer .horaires .localizationContainer .day div {
   height: 60px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .day div {
+  .contactFooter .contactFooterContainer .horaires .localizationContainer .day div {
     height: 80px;
   }
 }
-.contactFooter .contactFooter .contactFooterContainer .horaires .localizationContainer .day div .period {
+.contactFooter .contactFooterContainer .horaires .localizationContainer .day div .period {
   font-weight: 600;
 }
 @media screen and (max-width: 576px) {
-  .contactFooter .contactFooter .contactFooterContainer .horaires {
+  .contactFooter .contactFooterContainer .horaires {
     width: 90%;
   }
 }
@@ -649,6 +558,10 @@ body {
   background-repeat: repeat-y;
   background-size: cover;
   padding-top: 2rem;
+}
+
+.relative {
+  position: relative;
 }
 
 #section-review {
@@ -1330,22 +1243,25 @@ header .headerContainer .streetLamp {
   text-align: center;
   min-height: 100vh;
 }
+.rooms .roomMainFlex {
+  display: flex;
+}
 .rooms .video {
+  align-self: center;
   width: 50%;
   max-width: 1150px;
   height: 500px;
-  transform: translateX(50%);
-  position: relative;
+  margin-left: 25%;
 }
-.rooms iframe {
+.rooms .video iframe {
   width: 100%;
   height: 100%;
 }
 .rooms .infosSalles {
-  position: absolute;
-  top: 50%;
-  right: -200px;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .rooms .infosSalles .infoPeople {
   display: flex;
@@ -1365,6 +1281,7 @@ header .headerContainer .streetLamp {
 }
 .rooms .btn-reserv {
   margin-top: 65px;
+  margin-bottom: 1rem;
   font-size: 21px;
   font-family: "Lato";
   text-decoration: none;
@@ -1379,6 +1296,18 @@ header .headerContainer .streetLamp {
   color: #19e4f9 !important;
   background-color: black;
   box-shadow: 0px 0px 40px #19e4f9;
+}
+
+@media (max-width: 767.98px) {
+  .roomMainFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    margin-left: 0 !important;
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
