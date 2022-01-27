@@ -18,7 +18,7 @@
 }
 
 .burgerMenue {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   display: none;
@@ -58,12 +58,12 @@ nav {
   .logo {
     width: 90px;
     height: 90px;
-    background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 500px;
     z-index: 11;
+
     @media screen and (max-width: $mobile) {
       width: 50px;
       height: 50px;
@@ -144,7 +144,7 @@ nav {
         }
       }
 
-      li {
+      li a{
         color: #707070;
         transition: 0.3s;
         

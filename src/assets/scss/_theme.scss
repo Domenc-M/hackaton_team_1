@@ -36,7 +36,7 @@ p  {
     font-size:20px;
     font-family:"Lato";
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: $white !important;
     background-color: $cyan;
     border: 2px solid $cyan ;
     border-radius: 25px;
@@ -44,7 +44,7 @@ p  {
 }
 .btn-styled:hover{
     text-decoration: none;
-    color: $cyan;
+    color: $cyan !important;
     background-color: black;
     box-shadow: 0px 0px 40px $cyan;
 }

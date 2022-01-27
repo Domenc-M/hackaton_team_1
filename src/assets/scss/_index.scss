@@ -8,6 +8,7 @@ body{
     padding-top:2rem;
 }
 
+/////////////////////////////////SECTION REVIEW
 #section-review {
     background-color:$black;
     display:flex;
@@ -70,6 +71,11 @@ body{
     .review-container p {
         font-size:10px;
     }
+
+    .review-sub-flex {
+        padding:0 1rem !important;
+    }
+
 }
 
 // POUR le RESUME---------------------------------------------------------------------------------------------------
@@ -96,7 +102,7 @@ body{
     height:150px;
     width:100%;
     position:absolute;
-    z-index:158;
+    z-index:100;
     top:-149px;
 }
 

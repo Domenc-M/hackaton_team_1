@@ -34,7 +34,7 @@ p {
   font-size: 20px;
   font-family: "Lato";
   text-decoration: none;
-  color: black;
+  color: white !important;
   background-color: #19e4f9;
   border: 2px solid #19e4f9;
   border-radius: 25px;
@@ -43,7 +43,7 @@ p {
 
 .btn-styled:hover {
   text-decoration: none;
-  color: #19e4f9;
+  color: #19e4f9 !important;
   background-color: black;
   box-shadow: 0px 0px 40px #19e4f9;
 }
@@ -202,7 +202,6 @@ p {
 }
 #section4 #section4Container > div img {
   width: 80%;
-  border: 5px solid #8C2AFF;
 }
 #section4 #section4Container > div p {
   font-family: "lato";
@@ -505,6 +504,10 @@ body {
   .review-container p {
     font-size: 10px;
   }
+
+  .review-sub-flex {
+    padding: 0 1rem !important;
+  }
 }
 .resume {
   color: white;
@@ -528,7 +531,7 @@ body {
   height: 150px;
   width: 100%;
   position: absolute;
-  z-index: 158;
+  z-index: 100;
   top: -149px;
 }
 
@@ -628,6 +631,42 @@ nav {
   align-items: flex-end;
 }
 
+.reservation-container {
+  background-image: url("../img/logo-08.jpg");
+  color: white;
+  padding-top: 25vh;
+}
+.reservation-container .reservation-main-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.reservation-container .reservation-main-flex .reservation-title {
+  margin-left: 5rem;
+}
+.reservation-container .reservation-main-flex .reservation-title h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.reservation-container .reservation-main-flex .reservation-title p {
+  font-size: 15px;
+}
+.reservation-container .reservation-main-flex .reservation-col-flex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.reservation-container .reservation-main-flex .reservation-sub-flex {
+  display: flex;
+}
+
+.reservationLabel {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.reservationSelect {
+  border-radius: 0px 20px 20px 0px;
+}
+
 @keyframes navAnimeIn {
   0% {
     right: -150%;
@@ -645,7 +684,7 @@ nav {
   }
 }
 .burgerMenue {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   display: none;
@@ -687,7 +726,6 @@ nav {
 nav .logo {
   width: 90px;
   height: 90px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -778,11 +816,11 @@ nav .navContainer .nav .bigHide .twitch {
     color: white !important;
   }
 }
-nav .navContainer .nav li {
+nav .navContainer .nav li a {
   color: #707070;
   transition: 0.3s;
 }
-nav .navContainer .nav li:hover {
+nav .navContainer .nav li a:hover {
   color: black;
 }
 nav .navContainer .nav #rooms {
