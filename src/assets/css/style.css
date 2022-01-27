@@ -874,6 +874,229 @@ nav {
 
   .reservation-col-flex {
     width: 50vw !important;
+    margin: 0 !important;
+  }
+}
+@keyframes fogDown {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+}
+@keyframes hangarUp {
+  0% {
+    opacity: 0.3;
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes titleUp {
+  0% {
+    z-index: 8;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 15;
+  }
+}
+header {
+  height: 100vh;
+}
+header .headerContainer {
+  overflow: hidden;
+  z-index: 10;
+  height: 100%;
+}
+header .headerContainer .titleContainer {
+  position: absolute;
+  z-index: 15;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: titleUp 2s forwards;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .titleContainer {
+    font-size: 31px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    z-index: 10;
+  }
+}
+header .headerContainer .titleContainer h1 {
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 81px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 1000px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 61px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 41px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 31px;
+  }
+}
+header .headerContainer div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+header .headerContainer .sky {
+  background: url(../img/ciel-nuageux.png) center/cover;
+  z-index: 7;
+}
+header .headerContainer .hangarContainer {
+  overflow: hidden;
+  animation: hangarUp 2s forwards;
+  z-index: 10;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer {
+    animation: none;
+  }
+}
+header .headerContainer .hangarContainer .hangardesckt {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer .hangardesckt {
+    width: 100%;
+    bottom: 0;
+    display: none;
+  }
+}
+header .headerContainer .hangarContainer .hangar {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer .hangar {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+  }
+}
+header .headerContainer .fogContainer {
+  overflow: hidden;
+  z-index: 15;
+}
+header .headerContainer .fogContainer .fog {
+  background: url(../img/brouillard.png);
+  height: 100%;
+  bottom: 0;
+  animation: fogDown 2s forwards;
+}
+header .headerContainer .streetLamp {
+  background: url(../img/lampadaire.png) left/cover;
+  width: 100%;
+  z-index: 11;
+}
+
+.rooms {
+  padding-top: 150px;
+  background: black;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+.rooms .roomMainFlex {
+  display: flex;
+}
+.rooms .video {
+  align-self: center;
+  width: 50%;
+  max-width: 1150px;
+  height: 500px;
+  margin-left: 25%;
+}
+.rooms .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.rooms .infosSalles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rooms .infosSalles .infoPeople {
+  display: flex;
+  align-items: center;
+}
+.rooms .infosSalles .infoTime {
+  display: flex;
+  align-items: center;
+}
+.rooms .infosSalles .littleImage {
+  width: 70px;
+  height: 70px;
+}
+.rooms .infosSalles .littleImage img {
+  width: 100%;
+  height: 100%;
+}
+.rooms .btn-reserv {
+  margin-top: 65px;
+  margin-bottom: 1rem;
+  font-size: 21px;
+  font-family: "Lato";
+  text-decoration: none;
+  color: white !important;
+  background-color: #19e4f9;
+  border: 2px solid #19e4f9;
+  border-radius: 25px;
+  padding: 10px 50px;
+}
+.rooms .btn-reserv:hover {
+  text-decoration: none;
+  color: #19e4f9 !important;
+  background-color: black;
+  box-shadow: 0px 0px 40px #19e4f9;
+}
+
+.roomDescription {
+  margin: 2rem 10rem;
+}
+
+@media (max-width: 767.98px) {
+  .roomMainFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    margin-left: 0 !important;
+    width: 75%;
+  }
+
+  .roomDescription {
+    margin: 2rem 5rem;
   }
 }
 @keyframes navAnimeIn {
@@ -1097,229 +1320,6 @@ nav .navContainer #close .closeContainer .left {
 }
 nav .navContainer #close .closeContainer .right {
   transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-@keyframes fogDown {
-  0% {
-    transform: translateY(0%);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateY(20%);
-    opacity: 1;
-  }
-}
-@keyframes hangarUp {
-  0% {
-    opacity: 0.3;
-    transform: translateY(20%);
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@keyframes titleUp {
-  0% {
-    z-index: 8;
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-    z-index: 15;
-  }
-}
-header {
-  height: 100vh;
-}
-header .headerContainer {
-  overflow: hidden;
-  z-index: 10;
-  height: 100%;
-}
-header .headerContainer .titleContainer {
-  position: absolute;
-  z-index: 15;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  animation: titleUp 2s forwards;
-}
-@media screen and (max-width: 576px) {
-  header .headerContainer .titleContainer {
-    font-size: 31px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 50%;
-    z-index: 10;
-  }
-}
-header .headerContainer .titleContainer h1 {
-  color: white;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: bold !important;
-  font-size: 81px;
-  letter-spacing: 3px;
-}
-@media screen and (max-width: 1000px) {
-  header .headerContainer .titleContainer h1 {
-    font-size: 61px;
-  }
-}
-@media screen and (max-width: 800px) {
-  header .headerContainer .titleContainer h1 {
-    font-size: 41px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header .headerContainer .titleContainer h1 {
-    font-size: 31px;
-  }
-}
-header .headerContainer div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-header .headerContainer .sky {
-  background: url(../img/ciel-nuageux.png) center/cover;
-  z-index: 7;
-}
-header .headerContainer .hangarContainer {
-  overflow: hidden;
-  animation: hangarUp 2s forwards;
-  z-index: 10;
-}
-@media screen and (max-width: 576px) {
-  header .headerContainer .hangarContainer {
-    animation: none;
-  }
-}
-header .headerContainer .hangarContainer .hangardesckt {
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 576px) {
-  header .headerContainer .hangarContainer .hangardesckt {
-    width: 100%;
-    bottom: 0;
-    display: none;
-  }
-}
-header .headerContainer .hangarContainer .hangar {
-  display: none;
-}
-@media screen and (max-width: 576px) {
-  header .headerContainer .hangarContainer .hangar {
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    position: absolute;
-  }
-}
-header .headerContainer .fogContainer {
-  overflow: hidden;
-  z-index: 15;
-}
-header .headerContainer .fogContainer .fog {
-  background: url(../img/brouillard.png);
-  height: 100%;
-  bottom: 0;
-  animation: fogDown 2s forwards;
-}
-header .headerContainer .streetLamp {
-  background: url(../img/lampadaire.png) left/cover;
-  width: 100%;
-  z-index: 11;
-}
-
-.rooms {
-  padding-top: 150px;
-  background: black;
-  color: white;
-  text-align: center;
-  min-height: 100vh;
-}
-.rooms .roomMainFlex {
-  display: flex;
-}
-.rooms .video {
-  align-self: center;
-  width: 50%;
-  max-width: 1150px;
-  height: 500px;
-  margin-left: 25%;
-}
-.rooms .video iframe {
-  width: 100%;
-  height: 100%;
-}
-.rooms .infosSalles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.rooms .infosSalles .infoPeople {
-  display: flex;
-  align-items: center;
-}
-.rooms .infosSalles .infoTime {
-  display: flex;
-  align-items: center;
-}
-.rooms .infosSalles .littleImage {
-  width: 70px;
-  height: 70px;
-}
-.rooms .infosSalles .littleImage img {
-  width: 100%;
-  height: 100%;
-}
-.rooms .btn-reserv {
-  margin-top: 65px;
-  margin-bottom: 1rem;
-  font-size: 21px;
-  font-family: "Lato";
-  text-decoration: none;
-  color: white !important;
-  background-color: #19e4f9;
-  border: 2px solid #19e4f9;
-  border-radius: 25px;
-  padding: 10px 50px;
-}
-.rooms .btn-reserv:hover {
-  text-decoration: none;
-  color: #19e4f9 !important;
-  background-color: black;
-  box-shadow: 0px 0px 40px #19e4f9;
-}
-
-.roomDescription {
-  margin: 2rem 10rem;
-}
-
-@media (max-width: 767.98px) {
-  .roomMainFlex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video {
-    margin-left: 0 !important;
-    width: 75%;
-  }
-
-  .roomDescription {
-    margin: 2rem 5rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
