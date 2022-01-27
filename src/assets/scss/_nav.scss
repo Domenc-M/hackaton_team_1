@@ -147,7 +147,17 @@ nav {
       li {
         color: #707070;
         transition: 0.3s;
-        
+        .newRoom{
+          position: relative;
+        }
+        .new{
+          color: red;
+          font-size: 8px;
+          position: absolute;
+          top:0px;
+          right: -20px;
+        }
+
         &:hover {
           color: $black;
         }

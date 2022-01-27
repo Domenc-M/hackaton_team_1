@@ -210,6 +210,16 @@ nav .navContainer .nav li {
   color: #707070;
   transition: 0.3s;
 }
+nav .navContainer .nav li .newRoom {
+  position: relative;
+}
+nav .navContainer .nav li .new {
+  color: red;
+  font-size: 8px;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
 nav .navContainer .nav li:hover {
   color: black;
 }
@@ -277,6 +287,7 @@ footer {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 @media (max-width: 767.98px) {
   footer {
@@ -344,6 +355,14 @@ footer #logoReseau li {
 footer #logoReseau li:hover {
   cursor: pointer;
   transition: 0.2s;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: #19e4f9;
 }
 
 @keyframes fogDown {
@@ -701,7 +720,61 @@ header .headerContainer .streetLamp {
 }
 
 .rooms {
-  background: red;
+  padding-top: 150px;
+  background: black;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+.rooms .video {
+  width: 50%;
+  max-width: 1150px;
+  height: 500px;
+  transform: translateX(50%);
+  position: relative;
+}
+.rooms iframe {
+  width: 100%;
+  height: 100%;
+}
+.rooms .infosSalles {
+  position: absolute;
+  top: 50%;
+  right: -200px;
+  transform: translateY(-50%);
+}
+.rooms .infosSalles .infoPeople {
+  display: flex;
+  align-items: center;
+}
+.rooms .infosSalles .infoTime {
+  display: flex;
+  align-items: center;
+}
+.rooms .infosSalles .littleImage {
+  width: 70px;
+  height: 70px;
+}
+.rooms .infosSalles .littleImage img {
+  width: 100%;
+  height: 100%;
+}
+.rooms .btn-reserv {
+  margin-top: 65px;
+  font-size: 21px;
+  font-family: "Lato";
+  text-decoration: none;
+  color: white !important;
+  background-color: #19e4f9;
+  border: 2px solid #19e4f9;
+  border-radius: 25px;
+  padding: 10px 50px;
+}
+.rooms .btn-reserv:hover {
+  text-decoration: none;
+  color: #19e4f9 !important;
+  background-color: black;
+  box-shadow: 0px 0px 40px #19e4f9;
 }
 
 /*# sourceMappingURL=style.css.map */

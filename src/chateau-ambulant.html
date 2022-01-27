@@ -68,24 +68,65 @@
   </nav>
 
   <main class="rooms">
-    <h2>Le chateau ambulant</h2>
+    <h1>Le chateau ambulant</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio doloribus numquam minus veniam eligendi
       blanditiis harum fugit illum quos maxime obcaecati maiores, laboriosam accusamus at et deserunt consequatur
       molestiae quam. Temporibus sapiente iure similique deserunt autem doloribus maiores, facilis eum ad itaque
       laudantium odit illo rem aliquam nam sit exercitationem!
     </p>
     <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XDzvVBk2PIg" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-      <div>
-        
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/XDzvVBk2PIg" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <div class="infosSalles">
+          <div class=" infoPeople">
+            <div class="littleImage">
+              <img src="assets/img/icone_groupe.svg" alt="">
+            </div>
+            <p>4-12 joueurs</p>
+          </div>
+          <div class=" infoTime">
+            <div class="littleImage">
+              <img src="assets/img/icone_horloge.svg" alt="">
+            </div>
+            <p>70 minutes</p>
+          </div>
+        </div>
       </div>
     </div>
+    <button class="btn-reserv">
+      <a class="">Reserver</a>
+    </button>
+
   </main>
 
+  <footer>
+    <div class="navFooterContainer">
+      <ul id="navFooter">
+        <li>Rooms</li>
+        <li>Réservation</li>
+        <li>Contact</li>
+        <li>CGV-CGU</li>
+        <li>Nous trouver</li>
+      </ul>
+    </div>
+    <div class="logoFooterContainer">
+      <img src="./assets/img/logo-png.png" id="logoFooter" alt="logo Hangar game" />
+    </div>
+    <ul id="logoReseau">
+      <li>
+        <img src="./assets/img/logo_twitch.svg" alt="logo twitch" />
+      </li>
+      <li>
+        <img src="./assets/img/logo_facebook.svg" alt="logo facebook" />
+      </li>
+    </ul>
+  </footer>
 </body>
-<script src="assets/js/Nav.js"></script>
+<script src="assets/js/Nav.js">
+</script>
 <script src="assets/js/bootstrap.min.js"></script>
 
 </html>
