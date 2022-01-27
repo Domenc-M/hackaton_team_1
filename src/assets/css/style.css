@@ -7,8 +7,8 @@
   src: url(../fonts/Lato-Regular.ttf);
 }
 @font-face {
-  font-family: "Franklin";
-  src: url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+  font-family: "Lato Bold";
+  src: url(../fonts/Lato-Bold.ttf);
 }
 h1 {
   font-size: 121px;
@@ -22,7 +22,7 @@ h2 {
 
 h3 {
   font-size: 64px;
-  font-family: "Franklin";
+  font-family: "Lato Bold";
 }
 
 .mobile-subtitle {
@@ -32,6 +32,20 @@ h3 {
 p {
   font-size: 20px;
   font-family: "Lato";
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: #19e4f9;
+  border: 2px solid #19e4f9;
+  border-radius: 25px;
+  padding: 4px 50px;
+}
+.btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
 }
 
 @media (max-width: 767.98px) {
@@ -49,29 +63,44 @@ p {
 }
 .carousel_room_container {
   display: flex;
+  height: 100vh;
 }
 .carousel_room_container .img-container {
+  flex-basis: 100%;
   padding-left: 10%;
+  width: 100%;
+  height: 100%;
+  margin-top: -5rem;
 }
 .carousel_room_container .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   filter: drop-shadow(4px 4px 10px #000000);
 }
 .carousel_room_container .carousel_room_description {
-  padding-top: 5rem;
+  position: relative;
+  width: 60vw;
   padding-right: 10rem;
+  text-align: center;
+  margin-top: 8rem;
 }
 .carousel_room_container .carousel_room_description h3 {
   color: white;
+  font-size: 40px;
 }
 .carousel_room_container .carousel_room_description p {
   color: white;
+}
+.carousel_room_container .carousel_room_description .btn {
+  margin-top: 5rem;
 }
 
 .carousel_room_title {
   color: white;
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-left: 15vw;
   margin-right: 15vw;
   text-transform: uppercase;
@@ -81,6 +110,7 @@ p {
   font-size: 150px;
   color: #8C2AFF;
   opacity: 1 !important;
+  text-shadow: 0 0 10px black;
 }
 
 .dot {
@@ -91,11 +121,109 @@ p {
   border-radius: 100%;
 }
 
+.carousel_room_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 3rem;
+}
+
+.carousel_info_img_container {
+  height: 70px;
+  width: 70px;
+  margin-left: -10%;
+  margin-right: 20px;
+}
+.carousel_info_img_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel_absolute {
+  position: absolute;
+  bottom: 5rem;
+}
+
+@media (max-width: 767.98px) {
+  .carousel_room_container {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .carousel_absolute {
+    position: relative;
+    margin-top: 6rem;
+  }
+
+  .carousel_room_description {
+    width: 100% !important;
+    margin-top: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 #section-carousel-room {
   background-image: url("../img/logo-08.jpg");
   background-repeat: repeat-y;
   background-size: cover;
   padding-top: 2rem;
+}
+
+#section-review {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#section-review .gradient-border {
+  background: #19e4f9;
+  background: linear-gradient(137deg, #19e4f9 0%, #19e4f9 0%, #8c2aff 100%);
+  border-radius: 30px;
+  width: 80vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-review .gradient-border .review-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 78vw;
+  height: 32vh;
+  border-radius: 20px;
+}
+#section-review .gradient-border .review-container .purple-text {
+  color: #8C2AFF;
+}
+#section-review .gradient-border .review-container .review-sub-flex {
+  display: flex;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+#section-review .gradient-border .review-container .review-sub-flex p {
+  color: white;
+  padding-left: 2rem;
+  text-align: center;
+}
+#section-review .gradient-border .review-container .review-sub-flex .review-img-container {
+  height: 100px;
+  min-width: 100px;
+}
+#section-review .gradient-border .review-container .review-sub-flex .review-img-container img {
+  border-radius: 500px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .review-container p {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family:"Franklin";
-    src:url(../fonts/Franklin-Gothic-Heavy-Regular.ttf);
+    font-family:"Lato Bold";
+    src:url(../fonts/Lato-Bold.ttf)
 }
 
 h1 {
@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     font-size: 64px;
-    font-family:"Franklin";
+    font-family:"Lato Bold";
 }
 
 .mobile-subtitle {
@@ -35,6 +35,21 @@ h3 {
 p  {
     font-size:20px;
     font-family:"Lato";
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: $cyan;
+    border: 2px solid $cyan ;
+    border-radius: 25px;
+    padding: 4px 50px;
+
+    &:hover {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
 }
 
 @media (max-width: 767.98px) { 
