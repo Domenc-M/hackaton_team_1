@@ -789,6 +789,7 @@ nav {
 .reservation-container .reservation-main-flex .reservation-col-flex .btn-styled {
   align-self: center;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .reservation-container .reservation-main-flex .reservation-sub-flex {
   display: flex;
