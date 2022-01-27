@@ -8,11 +8,6 @@
     src:url(../fonts/Lato-Regular.ttf);
 }
 
-@font-face {
-    font-family:"Lato Bold";
-    src:url(../fonts/Lato-Bold.ttf)
-}
-
 h1 {
     font-size: 121px;
     font-family:"Stardos";
@@ -68,3 +63,13 @@ p {
 }
 
 }
+@keyframes navDown {
+    0% {
+    opacity: 0.3;
+    transform: translateY(-100%);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0%);
+    }
+  }

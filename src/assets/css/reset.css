@@ -46,6 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+<<<<<<< HEAD
 a {
 	text-decoration:none;
+=======
+a{
+	text-decoration: none !important;
+	color: inherit !important;
+>>>>>>> frank
 }

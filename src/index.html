@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<<<<<<< HEAD
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/lib/css/all.min.css">
-=======
->>>>>>> frank
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Le Hangar</title>
+    <meta name="description" content="Serez vous à la hauteur du Hangar Game, l'escape game le plus difficile et plus acclamé de Bordeaux ?">
+    <title>Le Hangar Game, meilleur Escape Game de Bordeaux</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <div class="burgerMenue" id="menuBurger"><div></div><div></div><div></div></div>
+    <!-- For have a burger menue at a low width -->
+
+    <div class="burgerMenue" id="menuBurger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- here we got the nav -->
+
+    ²<nav>
+
       <div class="logo">
-          <img src="./assets/img/logo png.png" alt="Logo Hangar Game">
+        <img src="./assets/img/logo_png.png" alt="Logo Hangar Game">
       </div>
-      <ul id="expendBurger">
-          <li><a href="#">Accueil</a> </li>
-          <li><a href="#">Nouvelle salle</a></li>
-          <li><a href="#">Salles</a></li>
+
+      <!-- this is for the burger menu for close the nav -->
+
+      <div class="navContainer">
+        <div id="close">
+          <div class="closeContainer">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+
+        <ul class="nav">
+          <li><a href="#">Nouvelle Room</a></li>
+          <li id="rooms"> Rooms 
+            <ul class="under">
+              <li><a href="./chateau-ambulant.html">Le château ambulant</a></li>
+              <li><a href="./sous-terrains-de-bordeaux.html">Les sous terrains de Bordeaux</a></li>
+              <li><a href="./salle3.html">Chucky</a></li>
+              <li><a href="./salle4.html">Squid Game</a></li>
+            </ul>
+          </li>
           <li><a href="#">Reservations</a></li>
           <li><a href="#">Contact</a></li>
-      </ul>
-  </nav>
-  </header>
 
-  <main>
+          <!-- thats differents thinks are only with the slide nave bare -->
+
+          <li class="bigHide"><a href="#">Nous trouver :</a></li>
+          <li class="bigHide">
+            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+          </li>
+          <li class="bigHide">
+            <div class="twitch"><i class="fab fa-twitch"></i></div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- here we got the header -->
+
+    <div class="headerContainer">
+
+      <div class="titleContainer">
+        <h1>Joyeux Hangar Game</h1>
+      </div>
+
+      <div class="skyContainer">
+        <div class="sky headerItem"></div>
+      </div>
+
+      <div class="hangarContainer">
+        <img class="hangardesckt headerItem" src="./assets/img/hangar.png" alt="Hangar image">
+        <img class="hangar headerItem" src="./assets/img/hangar-mobile.png" alt="Hangar image">
+      </div>
+
+      <div class="fogContainer">
+        <div class="fog headerItem"></div>
+      </div>
+
+      <div class="streetLampContainer">
+        <div class="streetLamp headerItem"></div>
+      </div>
+
+    </div>
+
+  </header>
 
     <!-------------------------SECTION RESUME-------------------------------->
     <section class=resume>
@@ -321,6 +382,10 @@
           <i class="fas fa-caret-right carousel_button_custom" aria-hidden="true"></i>
           <span class="visually-hidden">Next</span>
         </button>
+    <nav>
+
+      <div class="logo">
+        <img src="./assets/img/logo_png.png" alt="Logo Hangar Game">
       </div>
     </div>
   </section>

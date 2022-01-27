@@ -1,64 +1,217 @@
-li{
-  list-style: none;
+@keyframes navAnimeIn {
+  0% {
+    right: -150%;
+  }
+
+  100% {
+    right: 0;
+  }
 }
-a{
-  text-decoration: none;
-  color: inherit;
+@keyframes navAnimeOut {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -150%;
+  }
 }
-nav{
+
+.burgerMenue {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  z-index: 151;
+  animation: navDown 2s forwards;
+
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div {
+    background: #000;
+    height: 5px;
+    width: 35px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+}
+
+nav {
   display: flex;
-  opacity: 1;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  background: $lightblue;
-  .burgerMenue{
-    position: fixed;
-    right: 10px;
-    top: 10px;
+  background: rgba(255, 255, 255, 0.82);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 150;
+  height: 120px;
+  animation: navDown 2s forwards;
 
-
-    div{
-      background: #000;
-      height: 5px;
-      width: 35px;
-      margin: 5px;
-      border-radius: 5px;
-  }}
-
-  .logo{
-    width: 70px;
+  @media screen and (max-width: $mobile) {
     height: 70px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
     background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 500px;
-    img{
+    z-index: 11;
+    @media screen and (max-width: $mobile) {
       width: 50px;
+      height: 50px;
+    }
+    img {
+      width: 65%;
     }
   }
 
-  ul{
-    display: flex ;
-    width: 50%;
-    justify-content: space-evenly;
-    align-items: center;
-    li{
-      color: $grey;
-      a{
-        &:hover{
+  .navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width: $mobile) {
+      background: black;
+      width: 110%;
+      right: -150%;
+      height: 50vh;
+      top: 0px;
+      position: absolute;
+    }
+    .nav {
+      display: flex;
+      width: 60%;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 11;
+      font-family: "Lato";
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      .bigHide {
+        display: none;
+        padding: 5px;
+
+        div {
+          height: 30px;
+          width: 30px;
+          padding: 5px;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .facebook {
+          font-size: 0.9rem;
+          background-color: $purple;
           color: $black;
+        }
+
+        .twitch {
+          font-size: 1.25rem;
+          color: $purple;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        width: 90%;
+        font-size: 1.15rem;
+      }
+
+      @media screen and (max-width: 690px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: $mobile) {
+        height: 70%;
+        flex-direction: column;
+        padding: 15px;
+        align-items: end;
+        justify-content: end;
+        transform: translateY(50px);
+        .bigHide {
+          display: flex;
+        }
+        li:hover {
+          color: $white !important;
+        }
+      }
+
+      li {
+        color: #707070;
+        transition: 0.3s;
+        
+        &:hover {
+          color: $black;
+        }
+      }
+
+      #rooms{
+        position: relative;
+        .under{
+          display: none;
+          padding: 0;
+          width: 550%;
+          padding-top: 60%;
+          li{
+            color: $white;
+            &:hover{
+              color: $cyan;
+            }
+          }
+        }
+        &:hover .under{
+          position: absolute;
+          top: 100%;
+          display:block;
+          text-align: left;
+        }
+        &:hover{
+          display: flex;
+        }
+      }
+    }
+    #close {
+      display: none;
+      border: 2px solid $cyan;
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      position: absolute;
+      color: $cyan;
+      z-index: 15;
+      top: 5px;
+      right: 15px;
+
+      @media screen and (max-width: 576px) {
+        display: inherit;
+      }
+      .closeContainer {
+        div {
+          background: $cyan;
+          height: 3px;
+          width: 20px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          animation: navAnimeIn 2s s;
+        }
+
+        .left {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .right {
+          transform: translate(-50%, -50%) rotate(-45deg);
         }
       }
     }
   }
-  
-  .navburger{
-    position: absolute;
-    right: 15px;
-    top: 60px;
-    text-align: right;
-    opacity: 1;
-    transition: 1s;
-}}
+}

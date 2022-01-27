@@ -1,0 +1,146 @@
+@keyframes fogDown {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+}
+
+@keyframes hangarUp {
+  0% {
+    opacity: 0.3;
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes titleUp {
+  0% {
+    z-index: 8;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 15;
+  }
+}
+
+header {
+  height: 100vh;
+
+  .headerContainer {
+    overflow: hidden;
+    z-index: 10;
+    height: 100%;
+
+    .titleContainer{
+      position: absolute;
+      z-index: 15;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: titleUp 2s forwards;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 31px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50%;
+        z-index: 10;
+      }
+
+      h1 {
+        color: $white;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bold !important;
+        font-size: 81px;
+        letter-spacing: 3px;
+        @media screen and (max-width: 1000px) {
+          font-size: 61px;
+        }
+
+        @media screen and (max-width: 800px) {
+          font-size: 41px;
+        }
+
+        @media screen and (max-width: $mobile) {
+          font-size: 31px;
+        }
+      }
+    }
+      div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sky {
+      background: url(../img/ciel-nuageux.png) center/cover;
+      z-index: 7;
+    }
+
+    .hangarContainer{
+      overflow: hidden;
+      animation: hangarUp 2s forwards;
+      z-index: 10;
+
+      @media screen and (max-width : $mobile) {
+        animation: none;
+      }
+
+      .hangardesckt {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+          bottom: 0;
+          display: none;
+
+        }
+      }
+
+      .hangar{
+        display: none;
+
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+          bottom: 0;
+          display: flex;
+          position: absolute;
+        }
+      }
+    }
+
+    .fogContainer{
+      overflow: hidden;
+      z-index: 15;
+
+      .fog {
+        background: url(../img/brouillard.png);
+        height: 100%;
+        bottom: 0;
+        animation: fogDown 2s forwards;
+      }
+    }
+
+    .streetLamp {
+      background: url(../img/lampadaire.png) left/cover;
+      width: 100%;
+      z-index: 11;
+    }
+  }
+}
