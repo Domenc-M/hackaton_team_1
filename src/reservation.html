@@ -59,14 +59,19 @@
             <div class="reservation-title">
                 <h1>Reservation</h1>
                 <p>Préparez vous à rejoindre l'aventure !</p>
+
+                <img class="img-recu" src="assets/img/logo-16.png" alt="Texto">
+                <img class="img-phone" src="assets/img/logo-14.png" alt="Téléphone portable">
             </div>
 
             <div class="reservation-col-flex">
-                <div>
-                    <p>Programme ta mission</p>
+                <div class="reservationDivider">
+                    <p class="reservationFormTitle">Programme ta mission</p>
                     <div class="reservation-sub-flex">
     
-                        <label class="reservationLabel"  for="roomSelect"></label>
+                        <label class="reservationLabel"  for="roomSelect">
+                          <img src="assets/img/icone_loupe.png" alt="Groupe de joueurs">
+                        </label>
                         <select class="reservationSelect"  id="roomSelect" name="roomSelect">
                             <option>Choisis ta room</option>
                             <option value="SquidGame">Squid Game</option>
@@ -78,23 +83,26 @@
                     </div>
                 </div>
 
-                <div class="reservation-sub-flex">
-                    <div class="reservation-sub-flex">
+                <div class="reservation-sub-flex2">
 
-                        <label class="reservationLabel" for="dateSelect"></label>
-                        <select class="reservationSelect" id="dateSelect" name="dateSelect">
-                            <option>Choisis ta room</option>
-                            <option value="SquidGame">Squid Game</option>
-                            <option value="Chucky">Chucky</option>
-                            <option value="Castle">Le château ambulant</option>
-                            <option value="Bordeaux">Les sous terrains de Bordeaux</option>
-                          </select>
-    
-                    </div>
                     <div class="reservation-sub-flex">
-    
-                        <label class="reservationLabel"  for="personSelect"></label>
-                        <select class="reservationSelect"  id="personSelect" name="personSelect">
+                        <label class="reservationLabel" for="dateSelect">
+                          <img src="assets/img/calendrier-13.svg" alt="Calendrier">
+                        </label>
+                        <select class="reservationSelectHalf" id="dateSelect" name="dateSelect">
+                            <option>Mer. 15 nov</option>
+                            <option value="">Jeu. 16 nov</option>
+                            <option value="">Ven. 17 nov</option>
+                            <option value="">Sam. 18 nov</option>
+                            <option value="">Lun. 20 nov</option>
+                          </select>
+                    </div>
+
+                    <div class="reservation-sub-flex">
+                        <label class="reservationLabel"  for="personSelect">
+                          <img src="assets/img/icone_groupe_blanc.svg" alt="Groupe">
+                        </label>
+                        <select class="reservationSelectHalf"  id="personSelect" name="personSelect">
                             <option value="2">2 personnes</option>
                             <option value="3">3 personnes</option>
                             <option value="4">4 personnes</option>
@@ -104,14 +112,61 @@
                             <option value="8">8 personnes</option>
                             <option value="9">9 personnes</option>
                           </select>
-    
                     </div>
                 </div>
-            </div>
 
-        </div>
+              <div class="reservation-timestamp-flex">
+                <div class="timestampBtn">10H00</div>
+                <div class="timestampBtn">12H00</div>
+                <div class="timestampBtn">14H00</div>
+                <div class="timestampBtn">15H00</div>
 
-    </main>
+                <div class="timestampBtn">17H00</div>
+                <div class="timestampBtn">19H00</div>
+                <div class="timestampBtn">21H00</div>
+                <div class="timestampBtn">23H00</div>
+              </div>
+
+              <p class="reservationFormTitle">Coordonnées</p>
+              <input class="reservationInput" type="text" placeholder="Nom et prénom">
+              <input class="reservationInput" type="text" placeholder="Email">
+              <input class="reservationInput" type="text" placeholder="Numéro de téléphone">
+
+              <a class="btn-styled" href="*">Réserver</a>
+          </div>
+         
+      </div>
+      <div class="penultimate-flex">
+        <a class="btn-styled btn-hidden" href="*">Réserver</a>
+      </div>
+  </main>
+
+  <footer>
+    <div class="navFooterContainer">
+      <ul id="navFooter">
+        <li>Rooms</li>
+        <li>Réservation</li>
+        <li>Contact</li>
+        <li>CGV-CGU</li>
+        <li>Nous trouver</li>
+      </ul>
+    </div>
+    <div class="logoFooterContainer">
+      <img
+        src="./assets/img/logo-png.png"
+        id="logoFooter"
+        alt="logo Hangar game"
+      />
+    </div>
+    <ul id="logoReseau">
+      <li>
+        <img src="./assets/img/logo_twitch.svg" alt="logo twitch" />
+      </li>
+      <li>
+        <img src="./assets/img/logo_facebook.svg" alt="logo facebook" />
+      </li>
+    </ul>
+  </footer>
     
 </body>
 </html>

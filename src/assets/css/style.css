@@ -635,6 +635,12 @@ nav {
   background-image: url("../img/logo-08.jpg");
   color: white;
   padding-top: 25vh;
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+.reservation-container .reservationFormTitle {
+  margin-bottom: 1rem;
 }
 .reservation-container .reservation-main-flex {
   display: flex;
@@ -654,19 +660,103 @@ nav {
   display: flex;
   flex-direction: column;
   margin-right: 5rem;
+  width: 25vw;
+}
+.reservation-container .reservation-main-flex .reservation-col-flex .btn-styled {
+  align-self: center;
+  margin-bottom: 1rem;
 }
 .reservation-container .reservation-main-flex .reservation-sub-flex {
   display: flex;
 }
+.reservation-container .reservation-main-flex .reservation-sub-flex label img {
+  height: 100%;
+  width: 100%;
+}
+.reservation-container .reservation-main-flex .reservation-sub-flex2 {
+  display: flex;
+  justify-content: space-between;
+}
 
 .reservationLabel {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 5px 0px 0px 5px;
+  height: 2rem;
+  width: 2rem;
+  background-color: #8C2AFF;
 }
 
 .reservationSelect {
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 5px 5px 0px;
+  height: 2rem;
+  width: 100%;
 }
 
+.reservationSelectHalf {
+  border-radius: 0px 5px 5px 0px;
+  height: 2rem;
+  width: 75%;
+}
+
+.reservationDivider {
+  margin: 0.5rem 0rem;
+}
+
+.reservation-timestamp-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timestampBtn {
+  background-color: white;
+  color: #1B6AA3;
+  padding: 0.5rem 0.75rem;
+  margin: 0.2rem 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.timestampBtn:hover {
+  background-color: #1B6AA3;
+  color: white;
+}
+
+.reservationInput {
+  border-radius: 5px;
+  height: 2rem;
+  margin: 0.25rem;
+}
+
+.img-recu {
+  position: absolute;
+  left: 35%;
+  width: 30%;
+}
+
+.img-phone {
+  width: 100%;
+}
+
+.btn-hidden {
+  display: none;
+  margin: auto;
+}
+
+.penultimate-flex {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .reservation-col-flex {
+    display: none !important;
+  }
+
+  .btn-hidden {
+    display: inline-block;
+  }
+}
 @keyframes navAnimeIn {
   0% {
     right: -150%;
