@@ -1,6 +1,8 @@
 .contactTop {
-    background: url(../img/logo-08.jpg) center/cover;
+  background: url(../img/logo-08.jpg) center/cover;
+  padding-top: 100px;
 }
+
 .contactHeader {
 
     max-width: 25%;
@@ -110,4 +112,192 @@
         max-width: 80%;
         margin: 0 auto;
     }
+
+
+.contactHeader {
+  max-width: 25%;
+  padding-top: 50px;
+  margin-left: 50px;
+
+  h3 {
+    font-family: "Stardos";
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  p {
+    font-size: 1rem;
+    color: white;
+  }
+}
+.formContainer {
+  background: black;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 10px 50px;
+  border-radius: 20px;
+  z-index: 10;
+  transform: translateY(50px);
+  position: relative;
+  
+  @media screen and (max-width : 850px) {
+    width: 60%;
+  }
+  @media screen and (max-width : $mobile) {
+    width: 90%;
+  }
+
+  form {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+
+    & > input {
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+    }
+    textarea {
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+    }
+    #valid {
+      width: 150px;
+      border-radius: 50px;
+      background-color: #19e4f9;
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin: 20px 0 0;
+      border: 2px solid #19e4f9;
+      @media screen and (max-width : $mobile) {
+      margin: 20px auto 0;
+      width: 90%;
+      }
+      &:hover {
+        background: black;
+        color: #19e4f9;
+      }
+    }
+  }
+}
+.contactFooter {
+  background: #8c2aff;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  .contactFooterContainer {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    
+    h3 {
+      font-size: 3rem;
+      font-family: "stardos";
+      padding-bottom: 40px;
+    }
+    h4 {
+      padding-bottom: 40px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width : 850px) {
+      h3{
+        font-size: 2rem;
+      }
+      h4{
+        font-size: calc(1rem + .3vw);
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (max-width : $mobile) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .googleMap {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      iframe {
+        width: 100%;
+        height: 80%;
+      }
+      @media screen and (max-width : $mobile) {
+        width: 90%;
+        height:450px;
+      }
+    }
+
+    .adresse {
+      margin: 50px 0 0;
+      width: 20%;
+      padding-left: 15px;
+      h4{
+        padding: 0;
+      }
+      .line{
+        max-width: 150px ;
+        width: 70%;
+        height: 2px;
+        background: white;
+        border-radius: 50px;
+        margin: 20px 0;
+      }
+      @media screen and (max-width : $mobile) {
+        width: 90%;
+      }
+    }
+    .horaires {
+      text-align: right;
+      width: 35%;
+      @media screen and (max-width : $mobile) {
+        width: 90%;
+      }
+      .localizationContainer {
+        display: flex;
+        justify-content: end;
+        @media screen and (max-width : $mobile) {
+          justify-content: space-between;
+        }
+        .localizationLogo {
+          width: 50%;
+          height: 100%;
+          @media screen and (max-width : $mobile) {
+            width: 90%;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .day {
+          display: flex;
+          flex-direction: column;
+          div{
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width : $mobile) {
+              height: 80px;
+            }
+            .period{
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      @media screen and (max-width : $mobile) {
+        width: 90%;
+      }
+    }
+  }
+}
 }

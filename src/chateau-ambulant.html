@@ -14,64 +14,119 @@
 </head>
 
 <body>
+  <!-- For have a burger menue at a low width -->
 
-  <header>
-    <!-- For have a burger menue at a low width -->
+  <div class="burgerMenue" id="menuBurger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 
-    <div class="burgerMenue" id="menuBurger">
-      <div></div>
-      <div></div>
-      <div></div>
+  <!-- here we got the nav -->
+
+  <nav>
+
+    <div class="logo">
+      <img src="./assets/img/logo png.png" alt="Logo Hangar Game">
     </div>
 
-    <!-- here we got the nav -->
+    <!-- this is for the burger menu for close the nav -->
 
-    <nav>
-
-      <div class="logo">
-        <img src="./assets/img/logo png.png" alt="Logo Hangar Game">
+    <div class="navContainer">
+      <div id="close">
+        <div class="closeContainer">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
       </div>
 
-      <!-- this is for the burger menu for close the nav -->
+      <ul class="nav">
+        <li><a href="#">Nouvelle Room</a></li>
+        <li id="rooms"> Rooms
+          <ul class="under">
+            <li><a href="./chateau-ambulant.html">Le château ambulant</a></li>
+            <li><a href="./sous-terrains-de-bordeaux.html">Les sous terrains de Bordeaux</a></li>
+            <li><a href="./salle3.html">Chucky</a></li>
+            <li><a href="./salle4.html">Squid Game</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Contact</a></li>
 
-      <div class="navContainer">
-        <div id="close">
-          <div class="closeContainer">
-            <div class="left"></div>
-            <div class="right"></div>
+        <!-- thats differents thinks are only with the slide nave bare -->
+
+        <li class="bigHide"><a href="#">Nous trouver :</a></li>
+        <li class="bigHide">
+          <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+        </li>
+        <li class="bigHide">
+          <div class="twitch"><i class="fab fa-twitch"></i></div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main class="rooms">
+    <h1>Le chateau ambulant</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio doloribus numquam minus veniam eligendi
+      blanditiis harum fugit illum quos maxime obcaecati maiores, laboriosam accusamus at et deserunt consequatur
+      molestiae quam. Temporibus sapiente iure similique deserunt autem doloribus maiores, facilis eum ad itaque
+      laudantium odit illo rem aliquam nam sit exercitationem!
+    </p>
+    <div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/XDzvVBk2PIg" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <div class="infosSalles">
+          <div class=" infoPeople">
+            <div class="littleImage">
+              <img src="assets/img/icone_groupe.svg" alt="">
+            </div>
+            <p>4-12 joueurs</p>
+          </div>
+          <div class=" infoTime">
+            <div class="littleImage">
+              <img src="assets/img/icone_horloge.svg" alt="">
+            </div>
+            <p>70 minutes</p>
           </div>
         </div>
-
-        <ul class="nav">
-          <li><a href="#">Nouvelle Room</a></li>
-          <li id="rooms"> Rooms 
-            <ul class="under">
-              <li><a href="./chateau-ambulant.html">Le château ambulant</a></li>
-              <li><a href="./sous-terrains-de-bordeaux.html">Les sous terrains de Bordeaux</a></li>
-              <li><a href="./salle3.html">Chucky</a></li>
-              <li><a href="./salle4.html">Squid Game</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Reservations</a></li>
-          <li><a href="#">Contact</a></li>
-
-          <!-- thats differents thinks are only with the slide nave bare -->
-
-          <li class="bigHide"><a href="#">Nous trouver :</a></li>
-          <li class="bigHide">
-            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
-          </li>
-          <li class="bigHide">
-            <div class="twitch"><i class="fab fa-twitch"></i></div>
-          </li>
-        </ul>
-
       </div>
-    </nav>
+    </div>
+    <button class="btn-reserv">
+      <a class="">Reserver</a>
+    </button>
 
-  </header>
+  </main>
+
+  <footer>
+    <div class="navFooterContainer">
+      <ul id="navFooter">
+        <li>Rooms</li>
+        <li>Réservation</li>
+        <li>Contact</li>
+        <li>CGV-CGU</li>
+        <li>Nous trouver</li>
+      </ul>
+    </div>
+    <div class="logoFooterContainer">
+      <img src="./assets/img/logo-png.png" id="logoFooter" alt="logo Hangar game" />
+    </div>
+    <ul id="logoReseau">
+      <li>
+        <img src="./assets/img/logo_twitch.svg" alt="logo twitch" />
+      </li>
+      <li>
+        <img src="./assets/img/logo_facebook.svg" alt="logo facebook" />
+      </li>
+    </ul>
+  </footer>
 </body>
-<script src="assets/js/Nav.js"></script>
+<script src="assets/js/Nav.js">
+</script>
 <script src="assets/js/bootstrap.min.js"></script>
 
 </html>
