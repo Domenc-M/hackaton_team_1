@@ -43,15 +43,6 @@ h2 {
 // pour les PRIX ------------------------------------------------------------------------------------------
 .prix-container{
     position: relative;
-    .back-prix {
-        position: absolute;
-        
-        height: 50%;
-        width: 160%;
-        background-color: rgb(255, 0, 0);
-        // transform: rotate(-20deg);
-        z-index: 0;
-    }
     .prix{    
         z-index: 1;
         color: white;
