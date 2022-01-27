@@ -47,14 +47,54 @@ p {
     font-size: 13px;
   }
 }
-@keyframes navAnime {
+@keyframes navDown {
   0% {
-    right: -150px;
+    opacity: 0.3;
+    transform: translateY(-100%);
   }
   100% {
-    right: 15px;
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
+@keyframes navAnimeIn {
+  0% {
+    right: -150%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes navAnimeOut {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -150%;
+  }
+}
+.burgerMenue {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  z-index: 151;
+  animation: navDown 2s forwards;
+}
+@media screen and (max-width: 576px) {
+  .burgerMenue {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.burgerMenue div {
+  background: #000;
+  height: 5px;
+  width: 35px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -64,30 +104,18 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
-}
-nav .burgerMenue {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: none;
+  z-index: 150;
+  height: 120px;
+  animation: navDown 2s forwards;
 }
 @media screen and (max-width: 576px) {
-  nav .burgerMenue {
-    display: flex;
-    flex-direction: column;
+  nav {
+    height: 70px;
   }
 }
-nav .burgerMenue div {
-  background: #000;
-  height: 5px;
-  width: 35px;
-  margin: 5px;
-  border-radius: 5px;
-}
 nav .logo {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   background: white;
   display: flex;
   justify-content: center;
@@ -95,65 +123,213 @@ nav .logo {
   border-radius: 500px;
   z-index: 11;
 }
-nav .logo img {
-  width: 50px;
+@media screen and (max-width: 576px) {
+  nav .logo {
+    width: 50px;
+    height: 50px;
+  }
 }
-nav ul {
+nav .logo img {
+  width: 65%;
+}
+nav .navContainer {
+  width: 100%;
   display: flex;
-  width: 50%;
+  justify-content: end;
+}
+@media screen and (max-width: 576px) {
+  nav .navContainer {
+    background: black;
+    width: 110%;
+    right: -150%;
+    height: 50vh;
+    top: 0px;
+    position: absolute;
+  }
+}
+nav .navContainer ul {
+  display: flex;
+  width: 60%;
   justify-content: space-evenly;
   align-items: center;
   z-index: 11;
+  font-family: "Lato";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav .navContainer ul .bigHide {
+  display: none;
+  padding: 5px;
+}
+nav .navContainer ul .bigHide div {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav .navContainer ul .bigHide .facebook {
+  font-size: 0.9rem;
+  background-color: #8C2AFF;
+  color: black;
+}
+nav .navContainer ul .bigHide .twitch {
+  font-size: 1.25rem;
+  color: #8C2AFF;
 }
 @media screen and (max-width: 950px) {
-  nav ul {
-    width: 70%;
+  nav .navContainer ul {
+    width: 90%;
+    font-size: 1.15rem;
   }
 }
 @media screen and (max-width: 690px) {
-  nav ul {
-    width: 90%;
+  nav .navContainer ul {
+    font-size: 13px;
   }
 }
-@media screen and (max-width: 5760px) {
-  nav ul {
-    display: none;
+@media screen and (max-width: 576px) {
+  nav .navContainer ul {
+    height: 70%;
+    flex-direction: column;
+    padding: 15px;
+    align-items: end;
+    justify-content: end;
+    transform: translateY(50px);
+  }
+  nav .navContainer ul .bigHide {
+    display: flex;
+  }
+  nav .navContainer ul li:hover {
+    color: white !important;
   }
 }
-nav ul li {
-  color: #4c4c4c;
+nav .navContainer ul li {
+  color: #707070;
+  transition: 0.3s;
 }
-nav ul li a:hover {
+nav .navContainer ul li:hover {
   color: black;
 }
-nav .navburger {
+nav .navContainer #close {
+  display: none;
+  border: 2px solid #19e4f9;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
   position: absolute;
-  animation: navAnime 1s;
-  top: 60px;
-  align-items: end;
-  flex-direction: column;
-  display: flex;
-  transition: 1s;
+  color: #19e4f9;
+  z-index: 15;
+  top: 5px;
+  right: 15px;
+}
+@media screen and (max-width: 576px) {
+  nav .navContainer #close {
+    display: inherit;
+  }
+}
+nav .navContainer #close .closeContainer div {
+  background: #19e4f9;
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  animation: navAnimeIn 2s s;
+}
+nav .navContainer #close .closeContainer .left {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+nav .navContainer #close .closeContainer .right {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+@keyframes fogDown {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+}
+@keyframes hangarUp {
+  0% {
+    opacity: 0.3;
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes titleUp {
+  0% {
+    z-index: 8;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 15;
+  }
+}
 header {
   height: 100vh;
 }
 header .headerContainer {
+  overflow: hidden;
+  z-index: 10;
   height: 100%;
 }
-header .headerContainer h1 {
+header .headerContainer .titleContainer {
   position: absolute;
   z-index: 15;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: titleUp 2s forwards;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .titleContainer {
+    font-size: 31px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    z-index: 10;
+  }
+}
+header .headerContainer .titleContainer h1 {
   color: white;
   width: 100%;
-  text-align: center;
   text-transform: uppercase;
   font-weight: bold !important;
-  font-size: 101px;
+  font-size: 81px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 1000px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 61px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 41px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .titleContainer h1 {
+    font-size: 31px;
+  }
 }
 header .headerContainer div {
   position: absolute;
@@ -162,24 +338,63 @@ header .headerContainer div {
 }
 header .headerContainer .sky {
   background: url(../img/ciel-nuageux.png) center/cover;
+  z-index: 7;
 }
-header .headerContainer .hangar {
-  background: url(../img/hangar.png) center/cover;
-  bottom: 0px;
-  left: 0px;
+header .headerContainer .hangarContainer {
+  overflow: hidden;
+  animation: hangarUp 2s forwards;
+  z-index: 10;
 }
-header .headerContainer .fog {
-  background: url(../img/brouillard.png) top/cover;
-  height: 75%;
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer {
+    animation: none;
+  }
+}
+header .headerContainer .hangarContainer .hangardesckt {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer .hangardesckt {
+    width: 100%;
+    bottom: 0;
+    display: none;
+  }
+}
+header .headerContainer .hangarContainer .hangar {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  header .headerContainer .hangarContainer .hangar {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+  }
+}
+header .headerContainer .fogContainer {
+  overflow: hidden;
+  z-index: 15;
+}
+header .headerContainer .fogContainer .fog {
+  background: url(../img/brouillard.png);
+  height: 100%;
   bottom: 0;
+  animation: fogDown 2s forwards;
 }
 header .headerContainer .streetLamp {
-  background: url(../img/lampadaire.png) top/cover;
-  z-index: 5;
+  background: url(../img/lampadaire.png) left/cover;
+  width: 100%;
+  z-index: 11;
 }
 
 .carousel_room_container {
   display: flex;
+}
+
+section {
+  height: 100vh;
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Le Hangar Game</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/lib/fontawesome-free-5.15.4-web/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Le Hangar Game</title>
 </head>
 
 <body>
 
   <header>
-    <nav>
-        <div class="burgerMenue" id="menuBurger"><div></div><div></div><div></div></div>
-        <div class="logo">
-            <img src="./assets/img/logo png.png" alt="Logo Hangar Game">
-        </div>
-        <ul id="expendBurger">
-            <li><a href="#">Accueil</a> </li>
-            <li><a href="#">Nouvelle salle</a></li>
-            <li><a href="#">Salles</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="headerContainer">
-      <h1>Joyeux Hangar Game</h1>
-      <div class="sky headerItem"></div>
-      <div class="hangar headerItem"></div>
-      <div class="fog headerItem"></div>
-      <div class="streetLamp headerItem"></div>
+    <!-- For have a burger menue at a low width -->
+
+    <div class="burgerMenue" id="menuBurger">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-  </header>
 
-  <main>
+    <!-- here we got the nav -->
 
-    <!-- <section id="section-carousel-room">
+    <nav>
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/Plan de travail 1 copie 3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption carousel_room_container d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/a2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption carousel_room_container d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/a2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption carousel_room_container d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/a2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption carousel_room_container d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="logo">
+        <img src="./assets/img/logo png.png" alt="Logo Hangar Game">
       </div>
 
-    </section> -->
-   
-  </main>
+      <!-- this is for the burger menu for close the nav -->
 
-  <footer>
+      <div class="navContainer">
+        <div id="close">
+          <div class="closeContainer">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </div>
 
-  </footer>
+        <ul>
+          <li><a href="#">Nouvelle Room</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">Contact</a></li>
 
+          <!-- thats differents thinks are only with the slide nave bare -->
+
+          <li class="bigHide"><a href="#">Nous trouver :</a></li>
+          <li class="bigHide">
+            <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+          </li>
+          <li class="bigHide">
+            <div class="twitch"><i class="fab fa-twitch"></i></div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- here we got the header -->
+
+    <div class="headerContainer">
+
+      <div class="titleContainer">
+        <h1>Joyeux Hangar Game</h1>
+      </div>
+
+      <div class="skyContainer">
+        <div class="sky headerItem"></div>
+      </div>
+
+      <div class="hangarContainer">
+        <img class="hangardesckt headerItem" src="./assets/img/hangar.png" alt="Hangar image">
+        <img class="hangar headerItem" src="./assets/img/hangar-mobile.png" alt="Hangar image">
+      </div>
+
+      <div class="fogContainer">
+        <div class="fog headerItem"></div>
+      </div>
+
+      <div class="streetLampContainer">
+        <div class="streetLamp headerItem"></div>
+      </div>
+
+    </div>
     
+  </header>
+  <section>
+
+  </section>
 </body>
 <script src="assets/js/Nav.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+
 </html>
