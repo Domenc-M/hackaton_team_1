@@ -640,6 +640,15 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 767.98px) {
+  h2 {
+    size: 40px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+}
 .triangle {
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background-color: black;
@@ -853,23 +862,17 @@ nav {
   width: 100%;
 }
 
-.btn-hidden {
-  display: none;
-  margin: auto;
-}
-
-.penultimate-flex {
-  display: flex;
-  justify-content: center;
-}
-
 @media (max-width: 767.98px) {
-  .reservation-col-flex {
+  .reservation-title {
     display: none !important;
   }
 
-  .btn-hidden {
-    display: inline-block;
+  .reservation-main-flex {
+    justify-content: center !important;
+  }
+
+  .reservation-col-flex {
+    width: 50vw !important;
   }
 }
 @keyframes navAnimeIn {

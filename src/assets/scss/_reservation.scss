@@ -113,21 +113,15 @@ cursor:pointer;
 width:100%;
 }
 
-.btn-hidden {
-    display:none;
-    margin:auto;
-}
-
-.penultimate-flex{
-    display:flex;
-    justify-content:center;
-}
-
 @media (max-width: 767.98px) { 
-.reservation-col-flex{
+.reservation-title{
     display:none !important;
 }
-.btn-hidden {
-    display:inline-block;
+.reservation-main-flex{
+    justify-content:center !important;
+    
+}
+.reservation-col-flex{
+    width:50vw !important;
 }
 }

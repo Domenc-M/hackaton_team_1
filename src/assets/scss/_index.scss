@@ -99,6 +99,15 @@ body{
     }
 }
 
+@media (max-width: 767.98px) { 
+    h2{
+        size: 40px !important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+}
+
 .triangle{
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     background-color:$black;
