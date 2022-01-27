@@ -147,7 +147,7 @@ nav .navContainer {
     position: absolute;
   }
 }
-nav .navContainer ul {
+nav .navContainer .nav {
   display: flex;
   width: 60%;
   justify-content: space-evenly;
@@ -157,11 +157,11 @@ nav .navContainer ul {
   font-size: 1.5rem;
   font-weight: bold;
 }
-nav .navContainer ul .bigHide {
+nav .navContainer .nav .bigHide {
   display: none;
   padding: 5px;
 }
-nav .navContainer ul .bigHide div {
+nav .navContainer .nav .bigHide div {
   height: 30px;
   width: 30px;
   padding: 5px;
@@ -171,28 +171,28 @@ nav .navContainer ul .bigHide div {
   align-items: center;
   cursor: pointer;
 }
-nav .navContainer ul .bigHide .facebook {
+nav .navContainer .nav .bigHide .facebook {
   font-size: 0.9rem;
   background-color: #8C2AFF;
   color: black;
 }
-nav .navContainer ul .bigHide .twitch {
+nav .navContainer .nav .bigHide .twitch {
   font-size: 1.25rem;
   color: #8C2AFF;
 }
 @media screen and (max-width: 950px) {
-  nav .navContainer ul {
+  nav .navContainer .nav {
     width: 90%;
     font-size: 1.15rem;
   }
 }
 @media screen and (max-width: 690px) {
-  nav .navContainer ul {
+  nav .navContainer .nav {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 576px) {
-  nav .navContainer ul {
+  nav .navContainer .nav {
     height: 70%;
     flex-direction: column;
     padding: 15px;
@@ -200,19 +200,43 @@ nav .navContainer ul .bigHide .twitch {
     justify-content: end;
     transform: translateY(50px);
   }
-  nav .navContainer ul .bigHide {
+  nav .navContainer .nav .bigHide {
     display: flex;
   }
-  nav .navContainer ul li:hover {
+  nav .navContainer .nav li:hover {
     color: white !important;
   }
 }
-nav .navContainer ul li {
+nav .navContainer .nav li {
   color: #707070;
   transition: 0.3s;
 }
-nav .navContainer ul li:hover {
+nav .navContainer .nav li:hover {
   color: black;
+}
+nav .navContainer .nav #rooms {
+  position: relative;
+}
+nav .navContainer .nav #rooms .under {
+  display: none;
+  padding: 0;
+  width: 550%;
+  padding-top: 60%;
+}
+nav .navContainer .nav #rooms .under li {
+  color: white;
+}
+nav .navContainer .nav #rooms .under li:hover {
+  color: #19e4f9;
+}
+nav .navContainer .nav #rooms:hover .under {
+  position: absolute;
+  top: 100%;
+  display: block;
+  text-align: left;
+}
+nav .navContainer .nav #rooms:hover {
+  display: flex;
 }
 nav .navContainer #close {
   display: none;

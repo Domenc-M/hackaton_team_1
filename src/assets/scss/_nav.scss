@@ -85,7 +85,7 @@ nav {
       top: 0px;
       position: absolute;
     }
-    ul {
+    .nav {
       display: flex;
       width: 60%;
       justify-content: space-evenly;
@@ -94,9 +94,11 @@ nav {
       font-family: "Lato";
       font-size: 1.5rem;
       font-weight: bold;
+
       .bigHide {
         display: none;
         padding: 5px;
+
         div {
           height: 30px;
           width: 30px;
@@ -107,11 +109,13 @@ nav {
           align-items: center;
           cursor: pointer;
         }
+
         .facebook {
           font-size: 0.9rem;
           background-color: $purple;
           color: $black;
         }
+
         .twitch {
           font-size: 1.25rem;
           color: $purple;
@@ -143,8 +147,34 @@ nav {
       li {
         color: #707070;
         transition: 0.3s;
+        
         &:hover {
           color: $black;
+        }
+      }
+
+      #rooms{
+        position: relative;
+        .under{
+          display: none;
+          padding: 0;
+          width: 550%;
+          padding-top: 60%;
+          li{
+            color: $white;
+            &:hover{
+              color: $cyan;
+            }
+          }
+        }
+        &:hover .under{
+          position: absolute;
+          top: 100%;
+          display:block;
+          text-align: left;
+        }
+        &:hover{
+          display: flex;
         }
       }
     }
