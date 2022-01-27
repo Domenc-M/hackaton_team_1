@@ -1316,6 +1316,10 @@ header .headerContainer .streetLamp {
     margin-left: 0 !important;
     width: 75%;
   }
+
+  .roomDescription {
+    margin: 2rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
