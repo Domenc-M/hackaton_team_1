@@ -1298,6 +1298,10 @@ header .headerContainer .streetLamp {
   box-shadow: 0px 0px 40px #19e4f9;
 }
 
+.roomDescription {
+  margin: 2rem 10rem;
+}
+
 @media (max-width: 767.98px) {
   .roomMainFlex {
     flex-direction: column;
