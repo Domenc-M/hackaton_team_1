@@ -81,7 +81,15 @@ margin-right: 20px;
 
 .carousel_absolute {
     position:absolute;
-    bottom:5rem;
+    bottom:6rem;
+    display:flex;
+    flex-direction:column;
+
+    .btn-styled {
+        margin-top:1rem;
+        display:inline-block;
+        align-self: center;
+    }
 }
 
 ///////////////////////////////////MEDIA QUERY
